@@ -26,15 +26,6 @@ angular.module('myApp.characterSheet', ['ngRoute'])
 	});
 
 
-	$scope.parseValues = function() {
-		console.log($scope.character);
-		console.log($scope.sheet);
-	}
-
-	$scope.getModifier = function(val) {
-
-	}
-
 	$scope.intTotal = function(arr) {
 		console.log(arr);
 	}
@@ -56,6 +47,11 @@ angular.module('myApp.characterSheet', ['ngRoute'])
 
 	}
 
+
+	$scope.parseValues = function() {
+		console.log($scope.character);
+		console.log($scope.sheet);
+	}
 
 
 }])

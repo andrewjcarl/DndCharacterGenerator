@@ -1,0 +1,15 @@
+{
+	"name" : "Uthrain",
+	"class" : "Bard 5th",
+	"attributes" : {
+		"STR" : {"score" : 9, "mod" : -1},
+		"DEX" : {"score" : 16, "mod" : 3},
+		"CON" : {"score" : 14, "mod" : 2},
+		"WIS" : {"score" : 16, "mod" : 3},
+		"INT" : {"score" : 14, "mod" : 2},
+		"CHA" : {"score" : 19, "mod" : 4}
+	},
+	"skills" : {
+		"Diplomacy" : {"rank" : 10, "misc" : 4}
+	}
+}

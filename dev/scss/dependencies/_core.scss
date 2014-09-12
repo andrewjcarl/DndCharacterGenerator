@@ -1,0 +1,107 @@
+
+/* Page Stylings
+ * ==================================== */
+
+
+.page {
+	position:relative;
+	padding: 23px;
+	max-width: 960px;
+}
+
+
+
+/* FLEXBOX flex
+ * ==================================== */
+.flex {
+  display: flex;
+}
+
+.flex-cell {
+  flex: 1;
+}
+
+/* With gutters */
+.flex-gutters {
+  margin-left: -1em;
+}
+.flex-gutters > .flex-cell {
+  padding-left: 1em;
+}
+
+/* Alignment per row */
+.flex-top {
+  align-items: flex-start;
+}
+.flex-bottom {
+  align-items: flex-end;
+}
+.flex-center {
+  align-items: center;
+}
+
+/* Alignment per cell */
+.flex-cell-top {
+  align-self: flex-start;
+}
+.flex-cell-bottom {
+  align-self: flex-end;
+}
+.flex-cell-center {
+  align-self: center;
+}
+
+/* Base classes for all media */
+.flex-fit > .flex-cell {
+  flex: 1;
+}
+.flex-full > .flex-cell {
+  flex: 0 0 100%;
+}
+.flex-1of2 > .flex-cell {
+  flex: 0 0 50%
+}
+.flex-1of3 > .flex-cell {
+  flex: 0 0 33.3333%
+}
+.flex-1of4 > .flex-cell {
+  flex: 0 0 25%
+}
+
+/* Small to medium screens */
+@media (min-width: 24em) {
+  .small-flex-fit > .flex-cell {
+    flex: 1;
+  }
+  .small-flex-full > .flex-cell {
+    flex: 0 0 100%;
+  }
+  .small-flex-1of2 > .flex-cell {
+    flex: 0 0 50%
+  }
+  .small-flex-1of3 > .flex-cell {
+    flex: 0 0 33.3333%
+  }
+  .small-flex-1of4 > .flex-cell {
+    flex: 0 0 25%
+  }
+}
+
+/* Large screens */
+@media (min-width: 48em) {
+  .large-flex-fit > .flex-cell {
+    flex: 1;
+  }
+  .large-flex-full > .flex-cell {
+    flex: 0 0 100%;
+  }
+  .large-flex-1of2 > .flex-cell {
+    flex: 0 0 50%
+  }
+  .large-flex-1of3 > .flex-cell {
+    flex: 0 0 33.3333%
+  }
+  .large-flex-1of4 > .flex-cell {
+    flex: 0 0 25%
+  }
+}

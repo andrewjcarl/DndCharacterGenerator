@@ -1,0 +1,85 @@
+
+<div class="page" ng-controller="characterCtrl">
+
+	<section id="sheet-header" class="flex flex-gutters">
+		<div class="flex-cell">
+			<input type="text" class="line full" ng-model="character.name"/>
+			<label>Character Name</label>
+
+			<input type="text" class="line full" ng-model="character.class"/>
+			<label>Class and Level</label>
+		</div>
+		<div class="flex-cell">
+			<input type="text" class="line full" ng-model="sheet.player"/>
+			<label>Player</label>
+		</div>
+		<div class="flex-cell">
+		</div>
+	</section>
+
+	<section id="attributes">
+		<table class="table">
+			<thead class="center">
+				<td><small>Ability Name</small>
+				<td><small>Ability <br/>Score</small>
+				<td><small>Ability <br/>Modifier</small>
+			</thead>
+			<tbody>
+			<tr ng-repeat="attr in pageSettings.Attributes">
+				<td class="title">
+					{{attr.abbr}}
+					<small>{{attr.name}}</small>
+				</td>
+				<td>
+					<input name="{{attr}}_base" type="text" size="3" value="10" class="border" ng-model="character.attributes[attr.abbr].score" integer ng-blur="updateModifiers(attr.abbr);" />
+				</td>
+				<td>
+					<input name="{{attr}}_mod" type="text" size="3" class="border" ng-model="character.attributes[attr.abbr].mod" integer disabled/>
+				</td>
+			</tr>
+			</tbody>
+		</table>
+	</section>
+
+
+	<section id="skills">
+		<table class="table spacing small">
+			<thead>
+				<td>Skill Name</td>
+				<td></td>
+				<td><small>Total</small></td>
+				<td></td>
+				<td><small>Rank</small></td>
+				<td></td>
+				<td><small>Mod</small></td>
+				<td></td>
+				<td><small>Misc</small></td>
+			</thead>
+			<tr ng-repeat="skill in pageSettings.Skills">
+				<td><button class="icon-dice" ng-click="roll(20, character.skills[skill.label].rank + character.attributes[skill.base_stat].mod + character.skills[skill.label].misc);">Go</button> {{skill.label}}</td>
+				<td>{{skill.base_stat}}</td>
+				<td><input value="{{character.skills[skill.label].rank + character.attributes[skill.base_stat].mod + character.skills[skill.label].misc}}" disabled type="text" size="2"/>
+				</td>
+				<td>=</td>
+				<td>
+					<input type="text" ng-model="character.skills[skill.label].rank" integer size="3" class="line"/>
+				</td>
+				<td>+</td>
+				<td>
+					<input type="text" ng-model="character.attributes[skill.base_stat].mod" integer size="3" class="line"/>
+				</td>
+				<td>+</td>
+				<td>
+					<input type="text" ng-model="character.skills[skill.label].misc" integer size="3" class="line"/>
+				</td>
+			</tr>
+		</table>
+
+	</section>
+
+	<button ng-click="parseValues()">Save</button>
+
+
+
+
+</div>

@@ -1,0 +1,43 @@
+section#attributes {
+
+	small {
+			font-size: .6em;
+			display:block;
+			width: 100%;
+			clear:both;
+			word-break: word-break;
+			font-weight: 400;
+		}
+
+	tr {
+		margin-bottom: 2px;
+	}
+	
+	tr td {
+		padding: 3px;
+	}
+
+	td.title {
+		background: $blue-grey;
+		color: $white;
+		text-align: center;
+		font-weight: bold;
+	}
+
+}
+
+
+
+
+section#sheet-header {
+	padding-bottom:25px;
+
+	input + label {
+		float: left;
+		width:100%;
+		font-size: .6em;
+		text-transform: uppercase;
+	}
+
+
+}

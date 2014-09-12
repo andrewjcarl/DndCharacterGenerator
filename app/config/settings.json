@@ -1,0 +1,225 @@
+{
+	"Attributes": [
+		{
+			"name": "Strength",
+			"abbr": "STR"
+		},
+		{
+			"name": "Dexterity",
+			"abbr": "DEX"
+		},
+		{
+			"name": "Constitution",
+			"abbr": "CON"
+		},
+		{
+			"name": "Wisdom",
+			"abbr": "WIS"
+		},
+		{
+			"name": "Intelligence",
+			"abbr": "INT"
+		},
+		{
+			"name": "Charisma",
+			"abbr": "CHA"
+		}						
+	],
+	"Saves": [
+		"FORT",
+		"REF",
+		"WILL"
+	],
+	"Skills" : {
+		"Appraise ": {
+			"label" : "Appraise",
+			"base_stat" : "INT"
+		},
+		"Balance ": {
+			"label" : "Balance",
+			"base_stat" : "DEX"
+		},
+		"Bluff ": {
+			"label" : "Bluff",
+			"base_stat" : "CHA"
+		},
+		"Climb ": {
+			"label" : "Climb",
+			"base_stat" : "STR"
+		},
+		"Concentration ": {
+			"label" : "Concentration",
+			"base_stat" : "CON"
+		},
+		"Craft ": {
+			"label" : "Craft",
+			"base_stat" : "INT"
+		},
+		"Decipher Script ": {
+			"label" : "Decipher Script",
+			"base_stat" : "INT"
+		},
+		"Diplomacy ": {
+			"label" : "Diplomacy",
+			"base_stat" : "CHA"
+		},
+		"Disable Device ": {
+			"label" : "Disable Device",
+			"base_stat" : "INT"
+		},
+		"Disguise ": {
+			"label" : "Disguise",
+			"base_stat" : "CHA"
+		},
+		"Escape Artist ": {
+			"label" : "Escape Artist",
+			"base_stat" : "DEX"
+		},
+		"Forgery ": {
+			"label" : "Forgery",
+			"base_stat" : "INT"
+		},
+		"Gather Information ": {
+			"label" : "Gather Information",
+			"base_stat" : "INT"
+		},
+		"Handle Animal ": {
+			"label" : "Handle Animal",
+			"base_stat" : "CHA"
+		},
+		"Heal ": {
+			"label" : "Heal",
+			"base_stat" : "WIS"
+		},
+		"Jump ": {
+			"label" : "Jump",
+			"base_stat" : "STR"
+		},
+		"Knowledge (arcana) ": {
+			"label" : "Knowledge (arcana)",
+			"base_stat" : "INT"
+		},
+		"Knowledge (architecture and engineering) ": {
+			"label" : "Knowledge (arch. & engineering)",
+			"base_stat" : "INT"
+		},
+		"Knowledge (dungeoneering) ": {
+			"label" : "Knowledge (dungeoneering)",
+			"base_stat" : "INT"
+		},
+		"Knowledge (geography) ": {
+			"label" : "Knowledge (geography)",
+			"base_stat" : "INT"
+		},
+		"Knowledge (history) ": {
+			"label" : "Knowledge (history)",
+			"base_stat" : "INT"
+		},
+		"Knowledge (local) ": {
+			"label" : "Knowledge (local)",
+			"base_stat" : "INT"
+		},
+		"Knowledge (nature) ": {
+			"label" : "Knowledge (nature)",
+			"base_stat" : "INT"
+		},
+		"Knowledge (nobility and royalty) ": {
+			"label" : "Knowledge (nob. & royalty)",
+			"base_stat" : "INT"
+		},
+		"Knowledge (religion) ": {
+			"label" : "Knowledge (religion)",
+			"base_stat" : "INT"
+		},
+		"Knowledge (the planes) ": {
+			"label" : "Knowledge (the planes)",
+			"base_stat" : "INT"
+		},
+		"Hide ": {
+			"label" : "Hide",
+			"base_stat" : "DEX"
+		},
+		"Intimidate ": {
+			"label" : "Intimidate",
+			"base_stat" : "CHA"
+		},
+		"Listen ": {
+			"label" : "Listen",
+			"base_stat" : "WIS"
+		},
+		"Move Silently ": {
+			"label" : "Move Silently",
+			"base_stat" : "DEX"
+		},
+		"Open Lock ": {
+			"label" : "Open Lock",
+			"base_stat" : "DEX"
+		},
+		"Perform ": {
+			"label" : "Perform",
+			"base_stat" : "CHA"
+		},
+		"Profession ": {
+			"label" : "Profession",
+			"base_stat" : "WIS"
+		},
+		"Ride ": {
+			"label" : "Ride",
+			"base_stat" : "DEX"
+		},
+		"Search ": {
+			"label" : "Search",
+			"base_stat" : "INT"
+		},
+		"Sense Motive ": {
+			"label" : "Sense Motive",
+			"base_stat" : "WIS"
+		},
+		"Sleight of Hand ": {
+			"label" : "Sleight of Hand",
+			"base_stat" : "DEX"
+		},
+		"Speak Language ": {
+			"label" : "Speak Language",
+			"base_stat" : "INT"
+		},
+		"Spellcraft ": {
+			"label" : "Spellcraft",
+			"base_stat" : "INT"
+		},
+		"Spot ": {
+			"label" : "Spot",
+			"base_stat" : "WIS"
+		},
+		"Survival ": {
+			"label" : "Survival",
+			"base_stat" : "WIS"
+		},
+		"Swim ": {
+			"label" : "Swim",
+			"base_stat" : "STR"
+		},
+		"Tumble ": {
+			"label" : "Tumble",
+			"base_stat" : "DEX"
+		},
+		"Use Magic Device ": {
+			"label" : "Use Magic Device",
+			"base_stat" : "CHA"
+		},
+		"Use Rope ": {
+			"label" : "Use Rope",
+			"base_stat" : "DEX"
+		},
+		"Use Psionic Device ": {
+			"label" : "Use Psionic Device",
+			"base_stat" : "INT"
+		},
+		"Knowledge ": {
+			"label" : "Knowledge",
+			"base_stat" : "INT"
+		}
+	}
+
+
+}

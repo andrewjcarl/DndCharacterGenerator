@@ -44,7 +44,6 @@ angular.module('myApp.characterSheet', ['ngRoute'])
 		var randomVal = Math.floor((Math.random() * parseInt(dice)) + 1);
 		var result =   randomVal + parseInt(value);
 		console.log("You rolled a " + result + " (" + randomVal + "+" + parseInt(value) + ")");
-
 	}
 
 

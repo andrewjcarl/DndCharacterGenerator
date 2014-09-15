@@ -1,3 +1,7 @@
+/*	
+	Login Page
+==============================*/
+
 @import '../foundation/colors';
 
 #login {
@@ -43,26 +47,12 @@
 		}
 
 		button {
-			color: white;
-			border: 1px solid @blue-dark;
-			padding: .75em 1.25em;
-			width: 100%;
-			border-radius: .25em;
-
-			background: @blue; 
-			background: -moz-linear-gradient(top, @blue-light 0%, @blue 100%); /* FF3.6+ */
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@blue-light), color-stop(100% @blue)); /* Chrome,Safari4+ */
-			background: -webkit-linear-gradient(top, @blue-light 0% @blue 100%); /* Chrome10+,Safari5.1+ */
-			background: -o-linear-gradient(top, @blue-light 0% @blue 100%); /* Opera 11.10+ */
-			background: -ms-linear-gradient(top, @blue-light 0% @blue 100%); /* IE10+ */
-			background: linear-gradient(to bottom, @blue-light 0% @blue 100%); /* W3C */
-
-			&:hover {backgorund: @blue;}
+			
 		}
 
 		ul.links {
 			list-style-type: none;
-			padding: 0;
+			padding: .75em 0;
 			margin: 0 auto;
 			display: table;
 
@@ -75,7 +65,10 @@
 					margin-right: .5em;
 				}
 
-				a {color: white;}
+				a {
+					font-size: .75em;
+					color: white;
+				}
 
 			}
 		}

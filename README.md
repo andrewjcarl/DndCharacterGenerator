@@ -1,3 +1,3 @@
-# DndCharGen_Sails
+# Dungeons and Dragons 3.5 Character Editor using Sailsjs
 
-a [Sails](http://sailsjs.org) application
+roll 20 bitches

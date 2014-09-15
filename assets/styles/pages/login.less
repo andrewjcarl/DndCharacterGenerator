@@ -1,0 +1,85 @@
+@import '../foundation/colors';
+
+#login {
+	background: url(../images/login-bg.png)  no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	.logo {
+		margin-top: 2em;
+		img {
+			display:block;
+			margin: 0px auto;
+			width: 450px;
+			height: auto;
+		}
+	}
+
+	.login {
+
+		margin: 0px auto;
+		display: table;
+		width: 350px;
+		padding: 23px;
+		background: rgba(0,0,0,.5);
+		margin-top: 2em;
+
+		label {
+			color: white;
+			font-size: .8em;
+			display: inline-block;
+			padding: 0 0 .5em 0;
+			font-weight: 300;
+		}
+		input {
+			display: block;
+			width: 100%;
+			padding: .75em;
+			border: 1px solid #dedede;
+			margin: 0 0 1em 0;
+			border-radius: .25em;
+		}
+
+		button {
+			color: white;
+			border: 1px solid @blue-dark;
+			padding: .75em 1.25em;
+			width: 100%;
+			border-radius: .25em;
+
+			background: @blue; 
+			background: -moz-linear-gradient(top, @blue-light 0%, @blue 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@blue-light), color-stop(100% @blue)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, @blue-light 0% @blue 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, @blue-light 0% @blue 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top, @blue-light 0% @blue 100%); /* IE10+ */
+			background: linear-gradient(to bottom, @blue-light 0% @blue 100%); /* W3C */
+
+			&:hover {backgorund: @blue;}
+		}
+
+		ul.links {
+			list-style-type: none;
+			padding: 0;
+			margin: 0 auto;
+			display: table;
+
+			li {
+				display: inline-block;
+
+				&:not(:last-of-type) {
+					border-right: 1px solid white;
+					padding-right: .5em;
+					margin-right: .5em;
+				}
+
+				a {color: white;}
+
+			}
+		}
+
+	}
+
+}
